@@ -6,6 +6,7 @@
 </description>
   <type>MobileViewsGrailsPlugin</type>
   <resources>
+    <resource>settings</resource>
     <resource>com.quirklabs.mobileviews.MobileService</resource>
   </resources>
   <repositories>

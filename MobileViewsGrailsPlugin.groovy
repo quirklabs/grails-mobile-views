@@ -16,7 +16,7 @@ class MobileViewsGrailsPlugin {
     def description = '''\
 Uses WURFL to switch to views in a mobile folder for mobile devices
 '''
-    def documentation = ""
+    def documentation = "https://github.com/quirklabs/grails-mobile-views"
     def license = "APACHE"
     def organization = [ name: "Quirk Labs", url: "http://www.quirklabs.co.za" ]
     def scm = [ url: "https://github.com/quirklabs/grails-mobile-views" ]
