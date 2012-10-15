@@ -1,12 +1,12 @@
-<plugin name='mobile-views' version='0.1' grailsVersion='2.0 &gt; *'>
+<plugin name='mobile-views' version='1.0.1' grailsVersion='2.0 &gt; *'>
   <author>Matthew de Nobrega</author>
   <authorEmail>matthew.denobrega@quirk.biz</authorEmail>
   <title>Grails Mobile Views Plugin</title>
   <description>Uses WURFL to switch to views in a mobile folder for mobile devices
 </description>
+  <documentation>https://github.com/quirklabs/grails-mobile-views</documentation>
   <type>MobileViewsGrailsPlugin</type>
   <resources>
-    <resource>settings</resource>
     <resource>com.quirklabs.mobileviews.MobileService</resource>
   </resources>
   <repositories>
@@ -19,7 +19,11 @@
     <repository name='http://maven.springframework.org/milestone/' url='http://maven.springframework.org/milestone/' />
   </repositories>
   <dependencies />
-  <plugins />
+  <plugins>
+    <runtime>
+      <plugin group='org.grails.plugins' name='spring-mobile' version='0.4' />
+    </runtime>
+  </plugins>
   <runtimePluginRequirements>
     <plugin name='springMobile' version='0.4' />
   </runtimePluginRequirements>

@@ -33,6 +33,8 @@ grails.project.dependency.resolution = {
               ":release:1.0.0") {
             export = false
         }
+
+        runtime ":spring-mobile:0.4"
     }
 }
 
