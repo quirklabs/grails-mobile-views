@@ -1,4 +1,4 @@
-<plugin name='mobile-views' version='1.0.1' grailsVersion='2.0 &gt; *'>
+<plugin name='mobile-views' version='1.1.0' grailsVersion='2.0 &gt; *'>
   <author>Matthew de Nobrega</author>
   <authorEmail>matthew.denobrega@quirk.biz</authorEmail>
   <title>Grails Mobile Views Plugin</title>

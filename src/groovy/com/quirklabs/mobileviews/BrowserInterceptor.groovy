@@ -7,6 +7,9 @@ class BrowserInterceptor {
 
     def afterInterceptor = { model, modelAndView ->
 
+        if(request?.queryString?.contains('qpv=mfd')) getSession()?.forceBrowser = 'mobile'
+        else if(request?.queryString?.contains('qpv=dsk')) getSession()?.forceBrowser = 'desktop'
+
         if(modelAndView) {
 
             if(getSession().forceBrowser == 'mobile') modelAndView.viewName = '/mobile/' + modelAndView.viewName
