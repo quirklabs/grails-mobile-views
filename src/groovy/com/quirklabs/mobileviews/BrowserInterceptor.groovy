@@ -7,8 +7,8 @@ class BrowserInterceptor {
 
     def afterInterceptor = { model, modelAndView ->
 
-        if(request?.queryString?.contains('qpv=mfd')) getSession()?.forceBrowser = 'mobile'
-        else if(request?.queryString?.contains('qpv=dsk')) getSession()?.forceBrowser = 'desktop'
+        if(request?.queryString?.contains('qpv=mfd') || request?.queryString?.contains('forceBrowser=mobile')) getSession()?.forceBrowser = 'mobile'
+        else if(request?.queryString?.contains('qpv=dsk') || request?.queryString?.contains('forceBrowser=desktop')) getSession()?.forceBrowser = 'desktop'
 
         if(modelAndView) {
 

@@ -34,7 +34,7 @@ grails.project.dependency.resolution = {
             export = false
         }
 
-        runtime ":spring-mobile:0.4"
+        compile(":spring-mobile:0.4")
     }
 }
 
